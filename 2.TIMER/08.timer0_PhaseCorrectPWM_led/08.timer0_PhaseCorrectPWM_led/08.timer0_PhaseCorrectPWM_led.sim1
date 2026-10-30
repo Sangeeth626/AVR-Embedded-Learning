@@ -1,0 +1,27 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-264,-108" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Debug/08.timer0_PhaseCorrectPWM_led.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Ground" CircId="Ground-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-440,104" rotation="0" hflip="1" vflip="1" label="Ground-3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Oscope" CircId="Oscope-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-76,-64" rotation="0" hflip="1" vflip="1" label="Oscope-4" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="8160000000" TimPos="0,3609217242,3609217242,3609217242," VolDiv="5,5,5,5," Tunnels=",,,," Trigger="4" Filter="0.5 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="-1.56108,-1.56108,-1.56108,-1.56108," />
+
+<item itemtype="Led" CircId="Led-30" mainComp="false" Show_id="false" Show_Val="false" Pos="-360,-12" rotation="180" hflip="1" vflip="1" label="Led-30" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="false" Threshold="3.5 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Node" CircId="Node-34" mainComp="false" Pos="-332,-12" />
+
+<item itemtype="Node" CircId="Node-35" mainComp="false" Pos="-440,72" />
+
+<item itemtype="Connector" uid="Connector-93" startpinid="Led-30-lPin" endpinid="Node-34-1" pointList="-344,-12,-332,-12" />
+
+<item itemtype="Connector" uid="Connector-94" startpinid="mega328-1-PORTD6" endpinid="Node-34-0" pointList="-272,-12,-332,-12" />
+
+<item itemtype="Connector" uid="Connector-95" startpinid="Node-34-2" endpinid="Oscope-4-Pin0" pointList="-332,-12,-332,-148,-236,-148,-236,-112,-164,-112" />
+
+<item itemtype="Connector" uid="Connector-96" startpinid="Led-30-rPin" endpinid="Node-35-1" pointList="-376,-12,-440,-12,-440,72" />
+
+<item itemtype="Connector" uid="Connector-97" startpinid="Oscope-4-PinG" endpinid="Node-35-0" pointList="-164,0,-164,48,-440,48,-440,72" />
+
+<item itemtype="Connector" uid="Connector-98" startpinid="Node-35-2" endpinid="Ground-3-Gnd" pointList="-440,72,-440,88" />
+
+</circuit>
