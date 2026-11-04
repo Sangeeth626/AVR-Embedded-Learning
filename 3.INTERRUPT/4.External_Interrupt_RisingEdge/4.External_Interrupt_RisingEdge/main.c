@@ -26,7 +26,7 @@ void external_interrupt_INT0_init()
 	EICRA |= ((1 << ISC01) | (1 << ISC00));
 	//step 5: enabling global interrupt
 	sei();
-};
+}
 
 void gpio_init()
 {

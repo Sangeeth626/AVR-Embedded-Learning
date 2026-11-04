@@ -18,7 +18,7 @@ void external_interrupt_INT0_init()
 {
 	EIMSK |= (1<<INT0) ; // Configuring or Enabling INT0 as Interrupt
 	
-	DDRD &= ~(1<<DDD6) ; // Configuring PD2 as input for external interrupt
+	DDRD &= ~(1<<DDD2) ; // Configuring PD2 as input for external interrupt
 	
 	// Configuring for Falling Edge on INT0 generate an interrupt request
 	EICRA |= (1<<ISC01);

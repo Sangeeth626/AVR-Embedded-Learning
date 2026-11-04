@@ -1,35 +1,35 @@
 <circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-264,-32" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="C:/Users/HP/OneDrive/Desktop/AVR/3.INTERRUPT/5.External_Interrupt_FallingEdge/5.External_Interrupt_FallingEdge/Debug/5.External_Interrupt_FallingEdge.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-340,-12" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Debug/5.External_Interrupt_FallingEdge.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
 
-<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-404,-88" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-480,-68" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
 
-<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-340,148" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-416,168" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Led" CircId="Led-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-180,48" rotation="0" hflip="1" vflip="1" label="Led-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+<item itemtype="Led" CircId="Led-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-256,68" rotation="0" hflip="1" vflip="1" label="Led-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
 
-<item itemtype="Resistor" CircId="Resistor-9" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-340,-48" rotation="90" hflip="1" vflip="1" label="Resistor-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+<item itemtype="Resistor" CircId="Resistor-9" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-416,-28" rotation="90" hflip="1" vflip="1" label="Resistor-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
 
-<item itemtype="Push" CircId="Push-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-340,60" rotation="90" hflip="1" vflip="1" label="Push-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+<item itemtype="Push" CircId="Push-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-416,80" rotation="90" hflip="1" vflip="1" label="Push-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
 
-<item itemtype="Node" CircId="Node-13" mainComp="false" Pos="-340,108" />
+<item itemtype="Node" CircId="Node-13" mainComp="false" Pos="-416,128" />
 
-<item itemtype="Node" CircId="Node-15" mainComp="false" Pos="-340,0" />
+<item itemtype="Node" CircId="Node-15" mainComp="false" Pos="-416,20" />
 
-<item itemtype="Connector" uid="Connector-5" startpinid="Led-6-lPin" endpinid="mega328-1-PORTB5" pointList="-196,48,-224,48" />
+<item itemtype="Connector" uid="Connector-5" startpinid="Led-6-lPin" endpinid="mega328-1-PORTB5" pointList="-272,68,-300,68" />
 
-<item itemtype="Connector" uid="Connector-22" startpinid="Fixed Voltage-2-outnod" endpinid="Resistor-9-lPin" pointList="-388,-88,-340,-88,-340,-64" />
+<item itemtype="Connector" uid="Connector-22" startpinid="Fixed Voltage-2-outnod" endpinid="Resistor-9-lPin" pointList="-464,-68,-416,-68,-416,-44" />
 
-<item itemtype="Connector" uid="Connector-25" startpinid="Push-10-switch0pinN" endpinid="Node-13-1" pointList="-340,76,-340,108" />
+<item itemtype="Connector" uid="Connector-25" startpinid="Push-10-switch0pinN" endpinid="Node-13-1" pointList="-416,96,-416,128" />
 
-<item itemtype="Connector" uid="Connector-26" startpinid="Led-6-rPin" endpinid="Node-13-0" pointList="-164,48,-148,48,-148,108,-340,108" />
+<item itemtype="Connector" uid="Connector-26" startpinid="Led-6-rPin" endpinid="Node-13-0" pointList="-240,68,-224,68,-224,128,-416,128" />
 
-<item itemtype="Connector" uid="Connector-27" startpinid="Node-13-2" endpinid="Ground-5-Gnd" pointList="-340,108,-340,132" />
+<item itemtype="Connector" uid="Connector-27" startpinid="Node-13-2" endpinid="Ground-5-Gnd" pointList="-416,128,-416,152" />
 
-<item itemtype="Connector" uid="Connector-32" startpinid="mega328-1-PORTD2" endpinid="Node-15-1" pointList="-272,0,-340,0" />
+<item itemtype="Connector" uid="Connector-32" startpinid="mega328-1-PORTD2" endpinid="Node-15-1" pointList="-348,20,-416,20" />
 
-<item itemtype="Connector" uid="Connector-33" startpinid="Resistor-9-rPin" endpinid="Node-15-0" pointList="-340,-32,-340,0" />
+<item itemtype="Connector" uid="Connector-33" startpinid="Resistor-9-rPin" endpinid="Node-15-0" pointList="-416,-12,-416,20" />
 
-<item itemtype="Connector" uid="Connector-34" startpinid="Node-15-2" endpinid="Push-10-pinP0" pointList="-340,0,-340,44" />
+<item itemtype="Connector" uid="Connector-34" startpinid="Node-15-2" endpinid="Push-10-pinP0" pointList="-416,20,-416,64" />
 
 </circuit>
