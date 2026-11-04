@@ -1,0 +1,27 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-536,312" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="C:/Users/HP/OneDrive/Desktop/AVR/2.TIMER/9.DCmotor_Speedcontrol/9.DCmotor_Speedcontrol/Debug/9.DCmotor_Speedcontrol.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Subcircuit" CircId="L293-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-596,328" rotation="-720" hflip="-1" vflip="1" label="L293-2" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" Logic_Symbol="true" />
+
+<item itemtype="DcMotor" CircId="DcMotor-3" mainComp="false" Show_id="true" Show_Val="false" Pos="-732,356" rotation="90" hflip="1" vflip="1" label="DcMotor-3" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="Oscope" CircId="Oscope-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-332,336" rotation="0" hflip="1" vflip="1" label="Oscope-9" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="50054542" TimPos="-61777808,-61777808,-61777808,-61777808," VolDiv="2.01808,2.01808,2.01808,2.01808," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="-3.28704,-3.28704,-3.28704,-3.28704," />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-564,408" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="L293-2-1A" endpinid="mega328-1-PORTD1" pointList="-588,336,-544,336" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="L293-2-2A" endpinid="mega328-1-PORTD2" pointList="-588,344,-544,344" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Oscope-9-Pin0" endpinid="Node-10-1" pointList="-420,288,-464,288,-464,460,-564,460,-564,408" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Node-10-2" endpinid="L293-2-12EN" pointList="-564,408,-564,352,-588,352" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="mega328-1-PORTD6" endpinid="Node-10-0" pointList="-544,408,-564,408" />
+
+<item itemtype="Connector" uid="Connector-49" startpinid="L293-2-2Y" endpinid="DcMotor-3-rPin" pointList="-636,344,-660,344,-660,420,-732,420,-732,396" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="L293-2-1Y" endpinid="DcMotor-3-lPin" pointList="-636,336,-660,336,-660,292,-732,292,-732,316" />
+
+</circuit>
